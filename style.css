@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'News Cycle', sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+main {
+    width: 1000px;
+    display: inline-block;
+}
+
+.isaac, .albert, .nikola {
+    border: 1px solid rgb(228, 228, 228);
+    border-top: 5px solid #666;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 270px;
+    float: left;
+    transition: .2s ease-out;
+
+}
+
+.isaac h1,
+.albert h1,
+.nikola h1 {
+    color: #0974b3;
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+
+.isaac h2,
+.albert h2,
+.nikola h2 {
+    color: #666;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.content {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top:0;
+    left: 0;
+}
+
+.content p {
+    color: #666;
+    margin: 20px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.foto {
+    width: 145px;
+    margin: 0px 15px 15px 10px;
+    float: left;
+    transition: .4s ease-out;
+    left: 0;
+    top: 0;
+    position: relative;
+
+}
+
+a {
+    border-radius: 15px 0;
+    color: white;
+    background: #0974b3;
+    display: block;
+    text-align: center;
+    width: 212px;
+    margin: 20px 0px 0px 8px;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: .4s ease-out;
+
+}
+
+.isaac:hover, .albert:hover, .nikola:hover {
+    transform: translateY(-5px);
+    border-top: #0974b3 solid 5px;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #06537f;
+    
+}
+.icon {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    opacity: 0;
+
+}
+
+.remas:hover .icon {
+    opacity: 1;
+}
+
+.remas:hover .foto {
+    filter: brightness(60%);
+}
